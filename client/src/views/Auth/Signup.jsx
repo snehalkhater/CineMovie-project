@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from 'react';
-import { setPageTitle } from "./../utils.jsx"
-import Input from '../components/Input.jsx';
-import Button from '../components/Button.jsx';
+import { setPageTitle } from "./../../utils.jsx"
+import Input from './../../components/Input.jsx';
+import Button from './../../components/Button.jsx';
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router";
 
