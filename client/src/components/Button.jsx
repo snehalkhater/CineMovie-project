@@ -9,15 +9,15 @@ function Button({ title, onClick, size = "medium", variant = "primary" }) {
   };
 
   const VARIANT_CLASSES = {
-    primary: "bg-blue-500 text-white hover:bg-blue-600",
-    secondary: "bg-gray-500 text-white hover:bg-gray-600",
-    tertiary: "bg-orange-400 text-black hover:bg-orange-600",
+    primary: "bg-[#48A6A7] text-white hover:bg-[#006A71]",
+    secondary: "bg-[#9ACBD0] text-black hover:bg-[#48A6A7]",
+    tertiary: "bg-[#F2EFE7] text-[#006A71] border border-[#006A71] hover:bg-[#9ACBD0]",
   };
 
   return (
     <button
       onClick={onClick}
-      className={`${VARIANT_CLASSES[variant]} ${SIZE_CLASSES[size]} rounded`}
+      className={`${VARIANT_CLASSES[variant]} ${SIZE_CLASSES[size]} rounded-lg transition duration-200`}
     >
       {title}
     </button>
