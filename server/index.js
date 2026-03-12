@@ -1,0 +1,26 @@
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import connectDB from './db.js';
+import { getHome, getHealth } from './controllers/health.js';
+import { postSignup, postLogin } from './controllers/auth.js';
+
+
+const app = express();
+dotenv.config();
+app.use(cors());
+app.use(express.json());
+const PORT = process.env.PORT || 8081;
+
+app.get('/', getHome);
+app.get('/health', getHealth);
+
+app.post('/signup', postSignup);
+app.post('/login', postLogin);
+
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+  connectDB();
+
+});
