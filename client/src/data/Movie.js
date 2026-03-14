@@ -1,8 +1,24 @@
+import Idiots from "../assets/MoviesImages/idiots.png";
+import Aarpaar from "../assets/MoviesImages/aar-paar.jpg";
+import BeyondTheStars from "../assets/MoviesImages/BeyondTheStars.jpg";
+import Dashavatar from "../assets/MoviesImages/Dashavatar.jpg";
+import Kantara from "../assets/MoviesImages/Kantara.jpg";
+import Mahalakshmi from "../assets/MoviesImages/Mahavatar Narsimha.jpeg";
+import Pani from "../assets/MoviesImages/Paani.jpeg";
+import Phullwanti from "../assets/MoviesImages/Phullwanti.avif";
+import Stree from "../assets/MoviesImages/Stree2.jpg";
+import Tumbbad from "../assets/MoviesImages/tumbbad.jpg";
+import Subedaar from "../assets/MoviesImages/subedaar.png";
+import Dhurandar from "../assets/MoviesImages/Dhurandar.jpg";
+import War2 from "../assets/MoviesImages/war2.jpg";
+import Chaava from "../assets/MoviesImages/chaava.jpg";
+import SitareZaminPar from "../assets/MoviesImages/SitareZaminPar.jpg";
+import Avtar from "../assets/MoviesImages/Aavtar.jpeg";
 const movie=[
    
     {
       id:"1",
-       image:"/movieImages/sitareJameenPar.jpg",
+       image:SitareZaminPar,
         name:"Sitaare Zameen Par",
         description:"A heartwarming sports drama about inclusion, teamwork, and self-belief.",
         type:"Comedy",
@@ -12,22 +28,13 @@ const movie=[
     },
       {
         id:"2",
-    image: "/movieImages/avtar3.jpg",
+    image: Avtar,
     name: "Avatar 3",
      description:"A mythological epic about divine power and cosmic justice.",
     type: "Action",
     language: "English",
     year: "2025",
     duration:"1h 52min"
-  },{
-    id:"3",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&h=600&fit=crop",
-    name: "Midnight in Paris",
-    type: "Romance",
-     description:"A magical romance where a writer time-travels to 1920s Paris.",
-    language: "English",
-    year: "2024",
-    duration:"2h 56min"
   },
     {
       id:"4",
@@ -41,7 +48,7 @@ const movie=[
   },
   {
     id:"5",
-    image: "/movieImages/chaava.jpg",
+    image: Chaava,
     name: "Chhaava",
     type: " Drama",
      description:"A historical epic showcasing bravery, sacrifice, and Maratha pride.",
@@ -51,7 +58,7 @@ const movie=[
   },
  {
         id:"6",
-        image:"/movieImages/war2.jpg",
+        image:War2,
         name:"War 2",
         type:"Action",
          description:"A high-octane spy action film with global missions and intense stunts.",
@@ -60,7 +67,7 @@ const movie=[
         duration:"2h 5min"
     },{
         id:"7",
-         image:"/movieImages/dhurandar.jpg",
+         image:Dhurandar,
         name:"Dhurandhar",
         type:"Action",
          description:"An action thriller about courage and the fight against powerful enemies.",
@@ -70,17 +77,17 @@ const movie=[
     },
   {
     id:"8",
-    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=600&fit=crop",
-    name: "Love in Tokyo",
-    type: "Romancs",
+    image: Subedaar,
+    name: "Subedaar",
+    type: "Drama",
      description:"A romantic drama about love, destiny, and relationships set in Tokyo.",
-    language: "English",
-    year: "2024",
-    duration:"1h 52min"
+    language: "Hindi",
+    year: "2025",
+    duration:"2h 22min"
   },
   {
     id:"9",
-    image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&h=600&fit=crop",
+    image: BeyondTheStars,
     name: "Beyond the Stars",
     type: "Drama",
      description:"A heartwarming sports drama about inclusion, teamwork, and self-belief.",
@@ -90,7 +97,7 @@ const movie=[
   },
   {
     id:"10",
-    image: "/movieImages/narsimha.jpg",
+    image: Mahalakshmi,
     name: "Mahavatar Narsimha",
     type: "Action",
      description:"A mythological epic about divine power and cosmic justice.",
@@ -100,7 +107,7 @@ const movie=[
   },
   {
     id:"11",
-    image: "/movieImages/kantar.jpg",
+    image: Kantara,
     name: "Kantara",
     type: "Action",
      description:"A powerful story blending folklore, faith, and the fight for land.",
@@ -112,7 +119,7 @@ const movie=[
 
   {
     id:"12",
-    image: "https://upload.wikimedia.org/wikipedia/en/3/38/Paani_film_poster.jpg",
+    image: Pani,
     name: "Paani",
     type: "Drama",
      description:"A powerful social drama highlighting water scarcity and rural struggle.",
@@ -122,7 +129,7 @@ const movie=[
   },
   {
     id:"13",
-    image: "/movieImages/dashavtar.jpg",
+    image: Dashavatar,
     name: "Dashavatar",
     type: "Thriller",
      description:"A heartwarming sports drama about inclusion, teamwork, and self-belief.",
@@ -131,7 +138,7 @@ const movie=[
     duration:"2h 35min"
   },{
     id:"14",
-     image: "/movieImages/aarpar.jpg",
+     image: Aarpaar,
     name: "Aarpar",
     type: "Romance",
      description:"A heartwarming sports drama about inclusion, teamwork, and self-belief.",
@@ -141,7 +148,7 @@ const movie=[
   },
   {
     id:"15",
-     image: "/movieImages/stree2.jpg",
+     image: Stree,
     name: "Stree 2",
     type: "Horror",
      description:"A heartwarming sports drama about inclusion, teamwork, and self-belief.",
@@ -150,7 +157,7 @@ const movie=[
     duration:"2h 29min"
   },{
     id:"16",
-     image: "/movieImages/phulwanti.jpg",
+     image: Phullwanti,
     name: "Phullwanti",
     type: "Drama",
      description:"A dark mythological thriller about greed, curses, and hidden treasures.",
@@ -159,7 +166,7 @@ const movie=[
     duration:"2h 14min"
   },{
     id:"17",
-     image: "/movieImages/tuumbad.jpg",
+     image: Tumbbad,
     name: "Tumbbad",
     type: "Horror",
     language: "Marathi",
@@ -168,7 +175,7 @@ const movie=[
     duration:"1h 44min"
   },{
     id:"18",
-     image: "/movieImages/3idiots.jpg",
+     image: Idiots,
     name: "3 Idiots",
      description:"A comedy-drama about friendship, dreams, and redefining success in life.",
     type: "Comedy",

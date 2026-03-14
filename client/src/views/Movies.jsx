@@ -4,7 +4,7 @@ import movies from '../data/Movie.js';
 import { Clapperboard } from 'lucide-react'
 import SelectBox from "../components/SelectBox"
 import MovieCards from '../components/MovieCard'
-
+import Slider from '../components/Slider';
 
 function Movie() {
   const [searchMovies, setSearchMovies] = useState("");
@@ -19,45 +19,67 @@ function Movie() {
   });
 
   return (
-    <div className='bg-[#1B3C53] min-h-screen pt-16'>
-  
-      <div className="relative bg-cover  mb-4 bg-white bg-center filter bg-blend-multiply bg-opacity-50 pt-8">
-        < div className='min-h-[80vh]   flex flex-col items-center justify-center  gap-7 px-4 md:px-0  py-4  md:p-4 text-3xl font-bold text-[#E3E3E3]'>
-          <div className='flex flex-col gap-7 mt-18 md:mt-5'>
-            <h1 className='text-2xl md:text-4xl lg:text-5xl text-center backdrop:backdrop-blur-2xl'> Discover Movies You’ll Love</h1>
-            <h3 className='text-center text-lg md:text-xl lg:text-2xl text-gray-400'> Browse by genre, language & book instantly</h3>
-          </div>
-          <div className='flex flex-col w-[100%]  md:flex-row gap-5 items-center justify-center  p-10 '>
-            <div className='md:w-[50%] w-[100%]  flex items-center justify-center'>
-              <input type='text' placeholder='Search Movies by title ....'
-                onChange={(e) => {
-                  setSearchMovies(e.target.value)
-                }} className='border px-5 w-[100%] text-lg! py-2 hover:scale-3d text-gray-300 focus:outline-none rounded-[4px] border-[1.5px]  border-[#456882]' />
-            </div>
-            <SelectBox
-              value={movieType}
-              onChange={(e) => setMovieType(e.target.value)}
-              options={["All", "Action", "Comedy", "Drama", "Horror", "Romance", "Thriller"]}
+    <div className='mt-[-10px] bg-[#F2EFE7] min-h-screen pt-10'>
+
+      {/* Slider */}
+      <Slider />
+
+      {/* Heading BELOW Slider */}
+      <div className="text-center mt-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#213555]">
+          Discover Movies You’ll Love
+        </h1>
+
+        <p className="text-lg md:text-xl mt-2 text-gray-600">
+          Browse by genre, language & book instantly
+        </p>
+      </div>
+
+      {/* Search + Filters */}
+      <div className='flex flex-col items-center gap-7 px-4 md:px-0 py-6'>
+
+        <div className='flex flex-col w-[90%] mx-auto md:flex-row gap-5 items-center justify-center'>
+
+          <div className='md:w-[50%] w-full'>
+            <input
+              type='text'
+              placeholder='Search Movies by title ....'
+              onChange={(e) => {
+                setSearchMovies(e.target.value)
+              }}
+              className='border px-5 w-full text-lg py-2 text-gray-700 focus:outline-none rounded border-[#006A71]'
             />
-            <SelectBox
-              value={movieLang}
-              onChange={(e) => setMovieLang(e.target.value)}
-              options={["All", "English", "Hindi", "Marathi", "Tamil"]}
-            />
           </div>
+
+          <SelectBox
+            value={movieType}
+            onChange={(e) => setMovieType(e.target.value)}
+            options={["All", "Action", "Comedy", "Drama", "Horror", "Romance", "Thriller"]}
+          />
+
+          <SelectBox
+            value={movieLang}
+            onChange={(e) => setMovieLang(e.target.value)}
+            options={["All", "English", "Hindi", "Marathi", "Tamil"]}
+          />
+
         </div>
       </div>
-      <div className='flex gap-10 p-7 items-center justify-center flex-wrap '>
+
+      {/* Movie Cards */}
+      <div className='flex gap-10 p-7 items-center justify-center flex-wrap'>
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie, index) => (
             <MovieCards key={index} {...movie} />
           ))
         ) : (
-          <p className="text-[#E3E3E3] text-2xl flex items-center gap-4">No movies found <Clapperboard /></p>
+          <p className="text-[#213555] text-2xl flex items-center gap-4">
+            No movies found <Clapperboard />
+          </p>
         )}
       </div>
-    </div>
 
+    </div>
   )
 }
 
