@@ -5,7 +5,7 @@ function Button({ title, onClick, size = "medium", variant = "primary" }) {
   const SIZE_CLASSES = {
     small: "px-2 py-1 text-xs mx-3",
     medium: "px-4 py-2 text-sm mx-4",
-    large: "px-6 py-2 text-lg mx-4",
+    large: "px-8 py-2 text-lg mx-4",
   };
 
   const VARIANT_CLASSES = {
