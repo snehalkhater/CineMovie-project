@@ -4,7 +4,7 @@ import movies from '../data/Movie.js';
 import { Clapperboard } from 'lucide-react'
 import SelectBox from "../components/SelectBox"
 import MovieCards from '../components/MovieCard'
-import Slider from '../components/Slider';
+
 
 function Movie() {
   const [searchMovies, setSearchMovies] = useState("");
@@ -20,11 +20,9 @@ function Movie() {
 
   return (
     <div className='mt-[-10px] bg-[#F2EFE7] min-h-screen pt-10'>
+    
 
-      {/* Slider */}
-      <Slider />
-
-      {/* Heading BELOW Slider */}
+    
       <div className="text-center mt-6">
         <h1 className="text-3xl md:text-5xl font-bold text-[#213555]">
           Discover Movies You’ll Love
@@ -34,8 +32,6 @@ function Movie() {
           Browse by genre, language & book instantly
         </p>
       </div>
-
-      {/* Search + Filters */}
       <div className='flex flex-col items-center gap-7 px-4 md:px-0 py-6'>
 
         <div className='flex flex-col w-[90%] mx-auto md:flex-row gap-5 items-center justify-center'>
@@ -65,15 +61,13 @@ function Movie() {
 
         </div>
       </div>
-
-      {/* Movie Cards */}
       <div className='flex gap-10 p-7 items-center justify-center flex-wrap'>
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie, index) => (
             <MovieCards key={index} {...movie} />
           ))
         ) : (
-          <p className="text-[#213555] text-2xl flex items-center gap-4">
+          <p className="text-[#006A71] text-2xl flex items-center gap-4">
             No movies found <Clapperboard />
           </p>
         )}

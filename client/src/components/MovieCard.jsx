@@ -37,9 +37,8 @@ function MovieCards({
     };
 
     return (
-        <div className="w-full max-w-[260px] bg-[#234C6A] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 duration-300">
+        <div className="w-full max-w-[260px] bg-[#006A71] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 duration-300">
 
-         
             <div className="relative overflow-hidden group aspect-[2/3] w-full">
                 <img
                     src={image}
@@ -47,10 +46,8 @@ function MovieCards({
                     className="w-full h-full object-cover group-hover:scale-110 duration-300"
                 />
 
-      
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
 
-              
                 <span
                     onClick={toggelFavIcon}
                     className="absolute top-3 right-3 bg-black/60 p-2 rounded-full cursor-pointer hover:scale-110 duration-200"
@@ -63,18 +60,15 @@ function MovieCards({
                 </span>
             </div>
 
-           
             <div className="flex flex-col gap-3 p-4 text-[#E3E3E3]">
 
-               
                 <h2 className="text-lg font-bold">{name}</h2>
 
-    
                 <p className="text-gray-300 text-xs leading-relaxed line-clamp-3">
                     {description}
                 </p>
 
-                <div className="flex items-center gap-4 text-gray-400 text-sm">
+                <div className="flex items-center gap-4 text-black text-sm">
                     <span className="flex items-center gap-1">
                         <Clock size={14} /> {duration}
                     </span>
@@ -83,22 +77,19 @@ function MovieCards({
                     </span>
                 </div>
 
-           
                 <div className="flex gap-2 text-xs">
-                    <span className="px-2 py-1 rounded-full bg-[#2c506b] border border-gray-500">
+                    <span className="px-2 py-1 rounded-full bg-[#9ACBD0] text-black border border-gray-500">
                         {type}
                     </span>
-                    <span className="px-2 py-1 rounded-full bg-[#2c506b] border border-gray-500">
+                    <span className="px-2 py-1 rounded-full bg-[#9ACBD0] text-black border border-gray-500">
                         {language}
                     </span>
                 </div>
-
-           
                 <Button
                     title="Book Now"
                     variant="primary"
                     size="md"
-                    onClick={() => navigate(`/Booking/${id}`)}
+                    onClick={() => navigate(`/booking/${id}`)}
                 />
             </div>
         </div>
