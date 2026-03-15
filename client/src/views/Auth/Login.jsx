@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 function Login() {
   useEffect(() => {
-    setPageTitle("Login - TinyTours");
+    setPageTitle("Login- CineMove");
   }, []);
 
 
