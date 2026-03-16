@@ -10,6 +10,9 @@ import UserNavbar from "./components/UserNavbar";
 import Footer from "./components/Footer";
 import Movies from "./views/Movies";
 import Booking from "./views/Booking";
+import Show from "./views/Users/Show.jsx";
+import AddMovie from "./views/Admin/AddMovies.jsx";
+import AdminNavbar from "./components/AdminNavbar.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -22,9 +25,13 @@ createRoot(document.getElementById("root")).render(
       <Route path="/" element={<Dashboard />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/admindashboard" element={<AdminDashboard />} />
       <Route path="/movies" element={<Movies />} />
       <Route path="/booking/:id" element={<Booking />} />
+      <Route path="/show" element={<Show />} />
+
+      
+      <Route path="/admin/add-movie" element={<AddMovie />} />
+      <Route path="/admindashboard" element={<AdminDashboard />} />
 
     </Routes>
 

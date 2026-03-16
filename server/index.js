@@ -3,8 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './db.js';
 import { getHome, getHealth } from './controllers/health.js';
-import { postSignup, postLogin } from './controllers/auth.js';
-
+import { postSignup, postLogin  } from './controllers/auth.js';
+import { addMovie, getAllMovies } from "./controllers/movieController.js";
 
 const app = express();
 dotenv.config();
@@ -17,6 +17,9 @@ app.get('/health', getHealth);
 
 app.post('/signup', postSignup);
 app.post('/login', postLogin);
+
+app.post('/add-movie', addMovie);
+app.get('/get-movie', getAllMovies)
 
 
 app.listen(PORT, () => {
