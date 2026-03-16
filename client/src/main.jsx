@@ -8,9 +8,9 @@ import Dashboard from "./views/Users/Dashboard";
 import AdminDashboard from "./views/Admin/AdminDashboard";
 import UserNavbar from "./components/UserNavbar";
 import Footer from "./components/Footer";
-import Movies from "./views/Movies";
-import Booking from "./views/Booking";
-
+import Movies from "./views/Users/Movies";
+import Booking from "./views/Users/Booking";
+import SeatSelection from "./views/Users/SeatSelection";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
 
@@ -25,7 +25,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/admindashboard" element={<AdminDashboard />} />
       <Route path="/movies" element={<Movies />} />
       <Route path="/booking/:id" element={<Booking />} />
-
+      <Route path="/seatselection" element={<SeatSelection />} />
     </Routes>
 
     <Footer />
