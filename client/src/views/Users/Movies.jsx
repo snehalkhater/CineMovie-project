@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import movies from '../data/Movie.js';
+import movies from '../../data/Movie.js';
 import { Clapperboard } from 'lucide-react'
-import SelectBox from "../components/SelectBox"
-import MovieCards from '../components/MovieCard'
+import SelectBox from "../../components/SelectBox.jsx"
+import MovieCards from '../../components/MovieCard.jsx'
 
 
 function Movie() {
@@ -19,7 +19,7 @@ function Movie() {
   });
 
   return (
-    <div className='mt-[-10px] bg-[#F2EFE7] min-h-screen pt-10'>
+    <div className='mt-20 bg-[#F2EFE7] min-h-screen pt-10'>
     
 
     

@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import movies from "../data/Movie.js";
-import Button from './../components/Button.jsx';
+import movies from "../../data/Movie.js";
+import Button from '../../components/Button.jsx';
 
 
 function Booking() {
@@ -21,15 +21,16 @@ function Booking() {
 
     return (
         <>
+        <toast position="top-center" />
             <div className="min-h-screen bg-[#F2EFE7]  bg-cover text-white p-4 md:p-6 pt-16">
 
 
-                <div className="max-w-4xl mx-auto bg-[#006A71]  rounded-lg p-4 mt-20 md:p-6 flex flex-col md:flex-row gap-6">
+                <div className="max-w-4xl mx-auto bg-[#006A71]  rounded-lg p-4 mt-50 md:p-6 flex flex-col md:flex-row gap-6">
 
                     <img
                         src={movie.image}
                         alt={movie.name}
-                        className="w-full md:w-[220px] rounded"
+                        className="w-full md:w-[250px] rounded"
                     />
 
                     <div className="flex-1">
@@ -80,7 +81,7 @@ function Booking() {
                         <div className="my-6">
                             <Button
                                 title="Proceed"
-                                variant="primary"
+                                variant="tertiary"
                                 size="large"
                                 onClick={() => {
                                     if (!selectedDate) {
