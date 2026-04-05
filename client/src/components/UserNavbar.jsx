@@ -49,8 +49,8 @@ function UserNavbar() {
               About
             </Link>
 
-            <Link to="/contact" className="hover:underline hover:text-yellow-400 transition">
-              Contact
+            <Link to="/show" className="hover:underline hover:text-yellow-400 transition">
+              Show
             </Link>
 
           </div>
@@ -115,11 +115,11 @@ function UserNavbar() {
     </Link>
 
     <Link 
-      to="/contact"
+      to="/show"
       className="hover:text-yellow-400 transition"
       onClick={()=>setMenuOpen(false)}
     >
-      Contact
+      Show
     </Link>
 
   </div>
