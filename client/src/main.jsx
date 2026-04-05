@@ -12,6 +12,7 @@ import Movies from "./views/Users/Movies";
 import Booking from "./views/Users/Booking";
 import SeatSelection from "./views/Users/SeatSelection";
 import Liked from "./views/Users/FavoriteMovies"
+import Payment from "./views/Users/Payment";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
 
@@ -28,6 +29,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/booking/:id" element={<Booking />} />
       <Route path="/seatselection" element={<SeatSelection />} />
       <Route path="/liked" element={<Liked /> }/>
+      <Route path='/payment' element={<Payment />} />
     </Routes>
 
     <Footer />

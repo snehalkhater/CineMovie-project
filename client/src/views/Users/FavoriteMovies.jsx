@@ -36,7 +36,7 @@ function FavMovies() {
             {(
                 <div className="flex flex-wrap gap-8 justify-center">
                     {(favMovies.length === 0 ?
-                        (<p className="flex gap-5 items-center justify-center  mb-10 text-[#E3E3E3] text-xl md:text-3xl text-center fon">
+                        (<p className="flex gap-5 items-center justify-center  mb-10 text-black text-xl md:text-3xl text-center fon">
                             No favorite movies yet <HeartIcon className="text-red-400" />
                         </p>)
                         : favMovies.map(movie => (
