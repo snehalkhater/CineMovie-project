@@ -11,16 +11,14 @@ import Footer from "./components/Footer";
 import Movies from "./views/Users/Movies";
 import Booking from "./views/Users/Booking";
 import SeatSelection from "./views/Users/SeatSelection";
-<<<<<<< HEAD
 import Liked from "./views/Users/FavoriteMovies"
 import Payment from "./views/Users/Payment";
 import About from "./views/Users/About";
-=======
+
 import Show from "./views/Users/Show.jsx";
 import AddMovie from "./views/Admin/AddMovies.jsx";
 import AdminNavbar from "./components/AdminNavbar.jsx";
 
->>>>>>> 72d5fe9e09df0375075a0aa94b532d85928a821b
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
 
@@ -39,6 +37,9 @@ createRoot(document.getElementById("root")).render(
       <Route path="/liked" element={<Liked /> }/>
       <Route path='/payment' element={<Payment />} />
       <Route path="/about"   element={<About />} />
+      <Route path="/show" element={<Show />} />
+      <Route path="/addmovie" element={<AddMovie />} /> 
+      <Route path="/adminnavbar" element={<AdminNavbar/>}/>
     </Routes>
 
     <Footer />
