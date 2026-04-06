@@ -33,7 +33,7 @@ function Login() {
       localStorage.setItem("userData", JSON.stringify(data));
 
       setTimeout(() => {
-        window.location.href = "/dashboard";
+        window.location.href = "/";
       }, 1500);
 
     } else {
