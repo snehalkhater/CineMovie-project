@@ -45,10 +45,9 @@ function FavMovieCard({ movie, onRemoveFav }) {
         <div className="mt-3">
           <Button
             title="Book Now"
-            variant="primary"
-            size="md"
+            variant="secondary"
+            size="medium"
             onClick={() => navigate(`/booking/${movie.id}`)}
-            className="w-full px-6 py-5 text-center"
           />
         </div>
 

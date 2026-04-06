@@ -164,24 +164,6 @@ const movie=[
     language: "Marathi",
     year: "2024",
     duration:"2h 14min"
-  },{
-    id:"17",
-     image: Tumbbad,
-    name: "Tumbbad",
-    type: "Horror",
-    language: "Marathi",
-     description:"A dark mythological thriller about greed, curses, and hidden treasures.",
-    year: "2018 ",
-    duration:"1h 44min"
-  },{
-    id:"18",
-     image: Idiots,
-    name: "3 Idiots",
-     description:"A comedy-drama about friendship, dreams, and redefining success in life.",
-    type: "Comedy",
-    language: "Hindi",
-    year: "2025",
-    duration:"2h 35min"
   }
 ]
 
