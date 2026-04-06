@@ -11,8 +11,6 @@ import Footer from "./components/Footer";
 import Movies from "./views/Users/Movies";
 import Booking from "./views/Users/Booking";
 import SeatSelection from "./views/Users/SeatSelection";
-import Movies from "./views/Movies";
-import Booking from "./views/Booking";
 import Show from "./views/Users/Show.jsx";
 import AddMovie from "./views/Admin/AddMovies.jsx";
 import AdminNavbar from "./components/AdminNavbar.jsx";
